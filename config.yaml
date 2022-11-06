@@ -1,0 +1,69 @@
+baseURL: https://example.com
+languageCode: en-us
+defaultContentLanguage: en
+title: Aarushi Kansal
+theme: papercss-hugo-theme
+#googleAnalytics: UA-123456789-1
+#disqusShortname: yourdiscussshortname
+
+privacy:
+  disqus:
+    disable: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 99
+
+# To disable, set to an extremely large value, such as 999999
+paginate: 5
+
+params:
+  homeMetaContent: Aarushi Kansal
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat: Jan 2, 2006
+  navTitleLink: /
+
+menu:
+  nav:
+    - name: About
+      url: /about/
+      weight: 1
+    - name: Blog
+      url: /
+      weight: 2
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
