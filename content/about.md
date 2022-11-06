@@ -10,3 +10,5 @@ author = "Aarushi Kansal"
 - ☁️ I specialise in cloud and platform engineering. 
 - ⚒️ I enjoy building developer productivity tools. 
 
+I've worked for: ThoughtWorks, Deliveroo and Tier Mobility, before moving into contracting. 
+
