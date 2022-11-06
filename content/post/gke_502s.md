@@ -22,11 +22,11 @@ This showed me the following error:
 backend_connection_closed_before_data_sent_to_client 
 ``
 
-This error confused me, a lot - it indicates that my backend closed the connection, but all the requests were less than 10 seconds, and my backend services on Google Cloud Platform (GCP) were all set to a 30 second timeout. All of the pods CPU and memory usage stayed below 10%, so definitely not a resource issue.
+This error confused me, a lot 😕 - it indicated that my backend closed the connection, but all the requests were less than 10 seconds, and my backend services on Google Cloud Platform (GCP) were all set to a 30 second timeout. All of the pods CPU and memory usage stayed below 10%, so definitely not a resource issue.
 
 Did some googling, found a LOT of results, none of them quite solved my exact issue. All the results did indicate there was definitely a timeout SOMEWHERE. I just needed to figure out where and why. 
 
-Spent quite a few days (embarrassingly long time) on this, looking at different points of failures, including the NAT I was using. This investigation was only made more difficult by the fact that it was such an intermittent error and impossible to figure how to reliably replicate the problem. 
+Spent quite a few days (🤭 embarrassingly long time) on this, looking at different points of failures, including the NAT I was using. This investigation was only made more difficult by the fact that it was such an intermittent error and impossible to figure how to reliably replicate the problem. 
 
 So, I used tshark and a bunch of load tests to actually observe the traffic and finally found out of about every ~100 or so requests, one would result in an ``RST`` from my actual application. 
 
@@ -34,4 +34,4 @@ Digging further into Google's documentation, it turns out the HTTP load balancer
 
 In the end, I increased the timeout on my application to 620 seconds, just more than the load balancer's timeout. This ensures that the server never closes the connection before the load balancer. 
 
-And since then, haven't seen any more scary 502s. 
+And since then, haven't seen any more scary 502s. 🎉 
