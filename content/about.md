@@ -12,7 +12,7 @@ author = "Aarushi Kansal"
 
 I've worked for: ThoughtWorks, Deliveroo and Tier Mobility, before moving into contracting. 
 
-Tools, Techniques + Things I use
+Tools, Techniques + Things I use:
 
 - GitOps: ArgoCD, FluxCD
 - CD/CD: CircleCI, Github Actions, Jenkins, TravisCI)
