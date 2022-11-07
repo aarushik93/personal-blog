@@ -16,7 +16,7 @@ Tools, Techniques + Things I use
 
 - GitOps: ArgoCD, FluxCD
 - CD/CD: CircleCI, Github Actions, Jenkins, TravisCI)
-- Grafana: Loki, Prometheus, Jaeger
+- Observability: Loki, Prometheus, Jaeger, NewRelic, Datadog
 - Service Mesh: Istio
 - Languages: GoLang, Python, Ruby
 - Cloud: GCP, AWS
