@@ -12,3 +12,15 @@ author = "Aarushi Kansal"
 
 I've worked for: ThoughtWorks, Deliveroo and Tier Mobility, before moving into contracting. 
 
+Tools, Techniques + Things I use
+
+- GitOps: ArgoCD, FluxCD
+- CD/CD: CircleCI, Github Actions, Jenkins, TravisCI)
+- Grafana: Loki, Prometheus, Jaeger
+- Service Mesh: Istio
+- Languages: GoLang, Python, Ruby
+- Cloud: GCP, AWS
+- Platform as a product
+- Orchestration: GKE, EKS
+- SLO based alerting
+
