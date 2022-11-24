@@ -24,3 +24,9 @@ Tools, Techniques + Things I use:
 - Orchestration: GKE, EKS
 - SLO based alerting
 
+
+Check out some of my writing and talks here:
+- https://dev.to/aarushikansal/
+- https://www.youtube.com/watch?v=VYy-otKpSf8
+- https://www.youtube.com/watch?v=G8lptDqPP-0
+- https://www.youtube.com/watch?v=-TrHJRRFCQE
