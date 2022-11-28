@@ -23,6 +23,7 @@ Tools, Techniques + Things I use:
 - Platform as a product
 - Orchestration: GKE, EKS
 - SLO based alerting
+- Chaos engineering
 
 
 Check out some of my writing and talks here:
