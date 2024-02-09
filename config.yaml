@@ -2,7 +2,7 @@ baseURL: https://example.com
 languageCode: en-us
 defaultContentLanguage: en
 title: Aarushi Kansal
-theme: papercss-hugo-theme
+theme: hugo-scroll
 #googleAnalytics: UA-123456789-1
 #disqusShortname: yourdiscussshortname
 
@@ -36,6 +36,9 @@ menu:
     - name: Blog
       url: /
       weight: 2
+    - name: Services
+      url: /services/
+      weight: 3
 
 markup:
   defaultMarkdownHandler: goldmark
